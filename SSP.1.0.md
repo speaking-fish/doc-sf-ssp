@@ -4,6 +4,7 @@
 ## Goal
 
 Simplest binary JSON-compatible protocol.
+
 Simpler then CBOR and BJSON.
 
 ## Types
