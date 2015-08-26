@@ -49,7 +49,9 @@ where TYPE_DATA is string representation of big decimal
 	[path]$bytearray[$[attributes]]=TYPE_DATA
 
 where TYPE_DATA is base64 representation of byte array
+
 if attribute "hex" specified - hex representation of byte array
+
 Multiline supported:
 
 	[path]$bytearray[$attributes]$line%index=TYPE_DATA

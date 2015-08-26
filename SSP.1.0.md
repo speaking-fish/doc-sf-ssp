@@ -9,11 +9,17 @@ Simpler then CBOR and BJSON.
 ## Types
 
 int: int8, int16, int32, int64
+
 float: float32, double64
+
 decimal: extra large decimal numbers
+
 binary: byte array
+
 string: string(utf8)
+
 array: array of any type
+
 object: map key: string value: any type
 
 ## Very simple subset way

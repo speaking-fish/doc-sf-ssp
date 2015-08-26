@@ -15,6 +15,7 @@
 	TYPE_BYTE_ARRAY bytearray
 	
 Why tags?
+
 Tags allows to determine types, not represented in standard JSON: NaN, byte array, decimals.
 
 Tags can be optional - when tag is skipped, type determines using standard JSON rules.
@@ -32,6 +33,7 @@ where TYPE_DATA is standard json representation of integer or quoted string repr
 	[name]$float[$[attributes]]: TYPE_DATA
 
 where TYPE_DATA is standard json representation of float or quoted string representation
+
 quoted string representation used for NaN-s, because standard json doesn't allow NaN-s
 
 ### String
@@ -51,6 +53,7 @@ where TYPE_DATA is quoted string representation of big decimal
 	[name]$bytearray[$[attributes]]: TYPE_DATA
 
 where TYPE_DATA is base64 representation of byte array in quoted string
+
 if attribute "hex" specified - hex representation of byte array in quoted string
 
 ### Object
@@ -74,6 +77,7 @@ Array represented as standard json array.
 	]
 
 Element of non-primitive type represented as is: array or object
+
 Element of primitive type wrapped to object with single element:
 
 	{ $TYPE[$[attributes]]: TYPE_DATA }
